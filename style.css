@@ -66,6 +66,29 @@ tr:nth-child(odd) {
 
     }
 
+    .container2 {
+        height: 300px;
+        background-color: #ef230439;
+        border: 5px solid #495867;
+        margin-bottom: 10px;
+
+    }
+
+    .container3 {
+        height: 300px;
+        background-color: #9ccab1;
+        border: 5px solid #2e897b;
+        margin-bottom: 10px;
+
+    }
+    
+    .container4 {
+        height: 300px;
+        background-color: #bcabae;
+        border: 5px solid #716969;
+        margin-bottom: 10px;
+
+    }
 
 
     .contido1 {
@@ -73,6 +96,31 @@ tr:nth-child(odd) {
         height: 100px;
         background-color: #9381ff;
         border: 5px solid #b8b8ff;
+        
+    }
+
+
+    .contido2 {
+        width: 100px;
+        height: 100px;
+        background-color: #ecc8af;
+        border: 5px solid #e7ad99;
+        
+    }
+    
+    .contido3 {
+        width: 100px;
+        height: 100px;
+        background-color: #70b7c8;
+        border: 5px solid #004e64;
+        
+    }
+    
+    .contido4 {
+        width: 100px;
+        height: 100px;
+        background-color: #b18b8b;
+        border: 5px solid #2d2e2e;
         
     }
     
@@ -98,7 +146,83 @@ tr:nth-child(odd) {
     .justify-content-space-around {
         justify-content: space-around
     }
+    
 
     .justify-content-space-evenly {
         justify-content: space-evenly;
+    }
+
+    .justify-content-initial {
+        justify-content: initial;
+    }
+
+    .justify-content-inherit {
+        justify-content: inherit;
+    }
+
+    .flex-direction-row {
+        flex-direction: row;
+    }
+
+    .flex-direction-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .flex-direction-column {
+        flex-direction: column;
+    }
+
+    .flex-direction-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .flex-direction-initial {
+        flex-direction: initial;
+    }
+
+    .flex-direction-inherit {
+        flex-direction: inherit;
+    }
+
+    .align-items-stretch {
+        align-items: stretch;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .align-items-flex-start {
+        align-items: flex-start;
+    }
+    
+    .align-items-flex-end {
+        align-items: flex-end;
+    }
+    
+    .align-items-start {
+        align-items: start;
+    }
+    
+    .align-items-end {
+        align-items: end;
+    }
+    
+    .align-items-baseline {
+        align-items: baseline;
+    }
+    
+    .align-items-initial {
+        align-items: initial;
+    }
+    
+    .align-items-inherit {
+        align-items: inherit;
+    }
+
+    .contido-align-items {
+        width: initial;
+        height: initial;
+        background-color: #70b7c8;
+        border: 5px solid #004e64;
     }
