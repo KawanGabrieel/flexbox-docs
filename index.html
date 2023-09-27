@@ -10,497 +10,754 @@
 <body>
     <h1>Flexbox</h1>
     <h2>Documentação</h2>
-    <h3>display: flex</h3>
-    <p class="descricao-propriedade">
-        A propriedade display: flex deve ser a primeira declarada no CSS. A partir dela é que o CSS vai entender q precisa estilizar o conteúdo do "container" com a caixa flexivel (FlexBox)
-    </p>
-    <p>
-        Exemplo:
-    </p>
-    <div class="container1 display-flex">
-        <div class="contido1"></div>
-        <div class="contido1"></div>
-        <div class="contido1"></div>
-        <div class="contido1"></div>
-        <div class="contido1"></div>
-    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#display-flex"> display-flex</a>
+            </li>
 
-    <table>
-        <caption>Valores padrão das propriedades do FlexBox</caption>
-        <tr>
-            <th class="propriedade">propriedade</th>
-            <th class="valor">valor</th>
-        </tr>
-        <tr>
-            <td class="propriedade">flex-direction</td>
-            <td class="valor">row</td>
-        </tr>
-        <tr>
-            <td class="propriedade">justify-content</td>
-            <td class="valor">flex-start</td>
-        </tr>
-        <tr>
-            <td class="propriedade">align-content</td>
-            <td class="valor">flex-start</td>
-        </tr>
-    </table>
+            <li>
+                <a href="#justify-content">justify-content</a>
+            </li>
+
+            <li>
+                <a href="#flex-direction">flex-direction</a>
+            </li>
+
+            <li>
+                <a href="#align-items">align-items</a>
+            </li>
+
+            <li>
+                <a href="#flex-wrap">flex-wrap</a>
+            </li>
+
+            <li>
+                <a href="#flex-flow">flex-flow</a>
+            </li>
+
+            <li>
+                <a href="#align-content">align-content</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="display-flex">
+        <h3>display: flex</h3>
+    
+        <p class="descricao-propriedade">
+            A propriedade display: flex deve ser a primeira declarada no CSS. A partir dela é que o CSS vai entender q precisa estilizar o conteúdo do "container" com a caixa flexivel (FlexBox)
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex">
+            <div class="contido1"></div>
+            <div class="contido1"></div>
+            <div class="contido1"></div>
+            <div class="contido1"></div>
+            <div class="contido1"></div>
+        </div>
+    </section>
+      
+    <section id="justify-content">
+        <h3>justify-content:</h3>
+    
+        <p class="descricao-propriedade">
+            A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo X (row, row reverse) ou eixo Y (column, column-reverse)
+    
+        </p>
+    
+        <h4>
+            Center
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex justify-content-center">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+            Flex-start
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "flex-start" vai posicionar o conteúdo ao começo do container
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex justify-content-flex-start">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+            Flex-end
+        </h4>
+    
+        <p class="descricao-propriedade">
+        O valor "flex-end" vai posicionar o conteúdo ao final do container
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex justify-content-flex-end">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+            Space-between
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "space-between" coloca um espaço entre sí nos conteúdos
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex justify-content-space-between">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+            Space-around
+        </h4>
+    
+        <p class="descricao-propriedade">
+           O valor "space-around" coloca um espaço determinado em volta de cada conteúdo, podendo acumular entre os conteúdos
+        </p>
+    
+        <div class="container1 display-flex justify-content-space-around">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+        Space-evenly
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "space-evenly" coloca espaços iguais entre cada conteúdo no container
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container1 display-flex justify-content-space-evenly">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
+    
+        <h4>
+            Initial
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "initial" mantém os itens em sua originalidade
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
         
-    <h3>justify-content:</h3>
-    <p class="descricao-propriedade">
-        A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo X (row, row reverse) ou eixo Y (column, column-reverse)
-
-    </p>
-    <h4>Center</h4>
-    <p class="descricao-propriedade">
-        O valor "center" vai alinhar o conteúdo ao centro do eixo primário.
-    </p>
-    <p>
-        Exemplo:
-    </p>
-    <div class="container1 display-flex justify-content-center">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-
-    <h4>Flex-start</h4>
-
-    <p class="descricao-propriedade">
-        O valor "flex-start" vai posicionar o conteúdo ao começo do container
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-    <div class="container1 display-flex justify-content-flex-start">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-    <h4>
-        Flex-end
-    </h4>
-    <p class="descricao-propriedade">
-    O valor "flex-end" vai posicionar o conteúdo ao final do container
-    </p>
-    <p>
-        Exemplo:
-    </p>
-    <div class="container1 display-flex justify-content-flex-end">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-    <h4>
-        Space-between
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "space-between" coloca um espaço entre sí
-    </p>
-    <p>
-        Exemplo:
-    </p>
-    <div class="container1 display-flex justify-content-space-between">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-    <h4>
-        Space-around
-    </h4>
-
-    <p class="descricao-propriedade">
-       O valor "space-around" coloca um espaço determinado em volta de cada conteúdo, podendo acumular entre os conteúdos
-    </p>
-
-    <div class="container1 display-flex justify-content-space-around">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-
-    <h4>
-    Space-evenly
-    </h4>
-    <p class="descricao-propriedade">
-        O valor "space-evenly" coloca espaços iguais entre cada conteúdo no container
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-
-    <div class="container1 display-flex justify-content-space-evenly">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-
-    <h4>
-        Initial
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "initial" mantém os itens em sua originalidade
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
+        <div class="container1 display-flex justify-content-initial">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
     
-    <div class="container1 display-flex justify-content-initial">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-
-    <h4>
-        Inherit
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "inherit" herda as configurações do primeiro código igual do site
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
+        <h4>
+            Inherit
+        </h4>
     
-    <div class="container1 display-flex justify-content-inherit">
-        <div class="contido1">1</div>
-        <div class="contido1">2</div>
-        <div class="contido1">3</div>
-        <div class="contido1">4</div>
-        <div class="contido1">5</div>
-    </div>
-
-    <h3>flex-direction</h3>
-    <p class="descricao-propriedade">
-        A propriedade flex-direction permite escolher a ordem dos itens dentro do container e como vão ser organizados
-    </p>
-
-    <h4>
-        Row
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "row" designa os itens dentro do container a ficarem em uma ordem de X (horizontal) é um valor que já é padrão
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-
+        <p class="descricao-propriedade">
+            O valor "inherit" herda as configurações do primeiro código igual do site
+        </p>
     
-    <div class="container2 display-flex flex-direction-row">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container1 display-flex justify-content-inherit">
+            <div class="contido1">1</div>
+            <div class="contido1">2</div>
+            <div class="contido1">3</div>
+            <div class="contido1">4</div>
+            <div class="contido1">5</div>
+        </div>
 
-    <h4>
-        Row-reverse
-    </h4>
-    <p class="descricao-propriedade">
-        O valor "row-reverse" inverte o lado e os itens dentro do container em ordem X
-    </p>
+    </section>
 
-    <p>
-        Exemplo:
-    </p>
+    <section id="flex-direction">
 
-    <div class="container2 display-flex flex-direction-row-reverse">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
-    <h4>
-        Column
-    </h4>
+        
+            <h3>
+                flex-direction
+            </h3>
+        
+            <p class="descricao-propriedade">
+                A propriedade flex-direction permite escolher a ordem dos itens dentro do container e como vão ser organizados
+            </p>
+        
+            <h4>
+                Row
+            </h4>
+        
+            <p class="descricao-propriedade">
+                O valor "row" designa os itens dentro do container a ficarem em uma ordem de X (horizontal) é um valor que já é padrão
+            </p>
+        
+            <p>
+                Exemplo:
+            </p>
+        
+            
+            <div class="container2 display-flex flex-direction-row">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+        
+            <h4>
+                Row-reverse
+            </h4>
+            <p class="descricao-propriedade">
+                O valor "row-reverse" inverte o lado e os itens dentro do container em ordem X
+            </p>
+        
+            <p>
+                Exemplo:
+            </p>
+        
+            <div class="container2 display-flex flex-direction-row-reverse">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+        
+            <h4>
+                Column
+            </h4>
+        
+            <p class="descricao-propriedade">
+                O valor "column" organiza os itens do container em Y (vertical)
+            </p>
+            <p>
+                Exemplo:
+            </p>
+            
+            <div class="container2 display-flex flex-direction-column">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+        
+            <h4>
+                Column-reverse
+            </h4>
+        
+            <p class="descricao-propriedade">
+                O valor "column-reverse" inverte o lado e os itens no container em ordem de Y
+            </p>
+        
+            <p>
+                Exemplo:
+            </p>
+        
+            <div class="container2 display-flex flex-direction-column-reverse">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+        
+            <h4>
+                Initial
+            </h4>
+            
+            <p class="descricao-propriedade">
+                O initial como mencionado no justify-content mantém os itens em sua forma original
+            </p>
+        
+            <p>
+                Exemplo:
+            </p>
+            
+            <div class="container2 display-flex flex-direction-initial">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+        
+            <h4>
+                Inherit
+            </h4>
+        
+            <p class="descricao-propriedade">
+                O valor "inherit" herda as caracteristicas do primeiro código igual a ele
+            </p>
+            
+            <p>
+                Exemplo:
+            </p>
+        
+            <div class="container2 display-flex flex-direction-inherit">
+                <div class="contido2">1</div>
+                <div class="contido2">2</div>
+                <div class="contido2">3</div>
+                <div class="contido2">4</div>
+                <div class="contido2">5</div>
+            </div>
+    </section>
 
-    <p class="descricao-propriedade">
-        O valor "column" organiza os itens do container em Y (vertical)
-    </p>
-    <p>
-        Exemplo:
-    </p>
+    <section id="align-items">
+
+        <h3>
+            Align-items
+        </h3>
     
-    <div class="container2 display-flex flex-direction-column">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
-
-    <h4>
-        Column-reverse
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "column-reverse" inverte o lado e os itens no container em ordem de Y
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-
-    <div class="container2 display-flex flex-direction-column-reverse">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
-
-    <h4>
-        Initial
-    </h4>
+        <p class="desricao-propriedade">
+            Sua forma normal não tem nada demais, mas, ele define o alinhamento dos itens dentro do container
+        </p>
     
-    <p class="descricao-propriedade">
-        O initial como mencionado no justify-content mantém os itens em sua forma original
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
+        <h4>
+            Stretch
+        </h4>
     
-    <div class="container2 display-flex flex-direction-initial">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
-
-    <h4>
-        Inherit
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "inherit" herda as caracteristicas do primeiro código igual a ele
-    </p>
+        <p class="descricao-propriedade">
+            O valor "stretch" estica os itens para caber no container
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
     
-    <p>
-        Exemplo:
-    </p>
+        <div class="container3 display-flex align-items-stretch">
+            <div class="contido-align-items">um pouco de conteúdo</div>
+            <div class="contido-align-items">mais um pouco de conteúdo</div>
+            <div class="contido-align-items">resto do container</div>
+            <div class="contido-align-items">resto do container</div>
+            <div class="contido-align-items">resto do container</div>
+        </div>
+    
+        <h4>
+            Center
+        </h4>
+    
+        <p class="descricao-propiedade">
+            O valor "center" posiciona os itens no centro do container em forma de Y (vertical)
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container3 display-flex align-items-center">
+            <div class="contido3">1</div>
+            <div class="contido3">2</div>
+            <div class="contido3">3</div>
+            <div class="contido3">4</div>
+            <div class="contido3">5</div>
+        </div>
+    
+        <h4>
+            Flex-start
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "flex-start" posiciona os itens no começo do container em direção Y (só o valor start também funciona)
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container3 display-flex align-items-flex-start">
+            <div class="contido3">1</div>
+            <div class="contido3">2</div>
+            <div class="contido3">3</div>
+            <div class="contido3">4</div>
+            <div class="contido3">5</div>
+        </div>
+    
+        <h4>
+            Flex-end
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "flex-end" posiciona os itens ao final do container (só o valor end também funciona)
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container3 display-flex align-items-flex-end">
+            <div class="contido3">1</div>
+            <div class="contido3">2</div>
+            <div class="contido3">3</div>
+            <div class="contido3">4</div>
+            <div class="contido3">5</div>
+        </div>
+    
+        <h4>
+            Baseline
+        </h4>
+    
+        <p class="descricao-classe">
+            O valor "baseline" coloca os itens de forma alinhada na linha base do container, independente do tamanho
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container3 display-flex align-items-baseline">
+            <div class="contidob1"></div>
+            <div class="contidob2"></div>
+            <div class="contidob3"></div>
+            <div class="contidob4"></div>
+            <div class="contidob5"></div>
+        </div>
+    </section>
 
-    <div class="container2 display-flex flex-direction-inherit">
-        <div class="contido2">1</div>
-        <div class="contido2">2</div>
-        <div class="contido2">3</div>
-        <div class="contido2">4</div>
-        <div class="contido2">5</div>
-    </div>
+    <section id="flex-wrap">
+
+        <h3>
+            Flex-wrap
+        </h3>
+    
+        <p class="descricao-propriedade">
+            O "flex-wrap" é uma propriedade que "embrulha" os itens dentro do container
+        </p>
+    
+        <h4>
+            Nowrap
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "nowrap" não faz nada demais pois pede pra não "embrulhar"
+        </p>
+        
+        <p>
+            Exemplo:
+        </p>
+        
+        <div class="container4 display-flex flex-wrap-nowrap">
+            <div class="contido4">1</div>
+            <div class="contido4">2</div>
+            <div class="contido4">3</div>
+            <div class="contido4">4</div>
+            <div class="contido4">5</div>
+        </div>
+    
+        <h4>
+            Wrap
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "wrap" embrulha os itens do container
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container4 display-flex flex-wrap">
+            <div class="contido-wrap">1</div>
+            <div class="contido-wrap">2</div>
+            <div class="contido-wrap">3</div>
+            <div class="contido-wrap">4</div>
+            <div class="contido-wrap">5</div>
+        </div>
+    
+        <h4>
+            Wrap-reverse
+        </h4>
+    
+        <p class="descricao-propriedade">
+            O valor "wrap-reverse" inverte a ordem de itens embrulhados dentro do container
+        </p>
+    
+        <p>
+            Exemplo:
+        </p>
+    
+        <div class="container4 display-flex flex-wrap-reverse">
+            <div class="contido-wrap">1</div>
+            <div class="contido-wrap">2</div>
+            <div class="contido-wrap">3</div>
+            <div class="contido-wrap">4</div>
+            <div class="contido-wrap">5</div>
+        </div>
+    </section>
+
+    <section id="flex-flow">
+
+        <h3>
+            Flex-flow
+        </h3>
+    
+        <p class="descricao-propriedade">
+            A propriedade "flex-flow" é um shorthand (básicamente abreviação) para as propriedades flex-direction e flex-wrap. Só é necessário colocar o valor e vai funcionar como as duas propriedades
+        </p>
+    
+        <p>
+            Exemplo: (valores wrap e column)
+        </p>
+    
+        
+        <div class="container5 display-flex flex-flow">
+            <div class="contido5">1</div>
+            <div class="contido5">2</div>
+            <div class="contido5">3</div>
+            <div class="contido5">4</div>
+            <div class="contido5">5</div>
+        </div>
+    </section>
+
+    <section id="align-content">
+
+        <h3>
+            Align-content
+        </h3>
+    
+        <p class="descricao-propriedade">
+            A propriedade "align-content" especifica como as linhas flexíveis são distribuidas
+        </p>
+    
+        <h4>
+            Stretch
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+            O valor "stretch" é o valor padrão da propriedade align-content, que estica os itens do container para preencher espaços faltando
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-stretch">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+    
+        
+        <h4>
+            Center
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-center">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+    
+        
+        <h4>
+            Flex-start
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-flex-start">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+        
+        <h4>
+            Flex-end
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-flex-end">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+        
+        <h4>
+            Space-between
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-space-between">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+        
+        <h4>
+            Space-around
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-space-around">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+        
+        <h4>
+            Space-evenly
+        </h4>
+        
+    
+        <p class="descricao-propriedade">
+    
+        </p>
+    
+        <P>
+            Exemplo:
+        </P>
+        
+        <div class="container6 display-flex align-content-space-evenly">
+            <div class="contido6">1</div>
+            <div class="contido6">2</div>
+            <div class="contido6">3</div>
+            <div class="contido6">4</div>
+            <div class="contido6">5</div>
+        </div>
+    </section>
+
     <h3>
-        Align-items
+        Seções
     </h3>
+    <nav>
+        <ul>
+            <li>
+                <a href="#display-flex"> display-flex</a>
+            </li>
 
-    <p class="desricao-propriedade">
-        Sua forma normal não tem nada demais, mas, ele define o alinhamento dos itens dentro do container
-    </p>
+            <li>
+                <a href="#justify-content">justify-content</a>
+            </li>
 
-    <h4>
-        Stretch
-    </h4>
-    <p class="descricao-propriedade">
-        O valor "stretch" estica os itens para caber no container
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
+            <li>
+                <a href="#flex-direction">flex-direction</a>
+            </li>
 
-    <div class="container3 display-flex align-items-stretch">
-        <div class="contido-align-items">um pouco de conteúdo</div>
-        <div class="contido-align-items">mais um pouco de conteúdo</div>
-        <div class="contido-align-items">resto do container</div>
-        <div class="contido-align-items">resto do container</div>
-        <div class="contido-align-items">resto do container</div>
-    </div>
-    <h4>
-        Center
-    </h4>
+            <li>
+                <a href="#align-items">align-items</a>
+            </li>
 
-    <p class="descricao-propiedade">
-        O valor "center" posiciona os itens no centro do container em forma de Y (vertical)
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
-    
-    <div class="container3 display-flex align-items-center">
-        <div class="contido3">1</div>
-        <div class="contido3">2</div>
-        <div class="contido3">3</div>
-        <div class="contido3">4</div>
-        <div class="contido3">5</div>
-    </div>
+            <li>
+                <a href="#flex-wrap">flex-wrap</a>
+            </li>
 
-    <h4>
-        Flex-start
-    </h4>
+            <li>
+                <a href="#flex-flow">flex-flow</a>
+            </li>
 
-    <p class="descricao-propriedade">
-        O valor "flex-start" posiciona os itens no começo do container em direção Y (só o valor start também funciona)
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
-    
-    <div class="container3 display-flex align-items-flex-start">
-        <div class="contido3">1</div>
-        <div class="contido3">2</div>
-        <div class="contido3">3</div>
-        <div class="contido3">4</div>
-        <div class="contido3">5</div>
-    </div>
-
-    <h4>
-        Flex-end
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "flex-end" posiciona os itens ao final do container (só o valor end também funciona)
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
-    
-    <div class="container3 display-flex align-items-flex-end">
-        <div class="contido3">1</div>
-        <div class="contido3">2</div>
-        <div class="contido3">3</div>
-        <div class="contido3">4</div>
-        <div class="contido3">5</div>
-    </div>
-
-    <h4>
-        Baseline
-    </h4>
-
-    <p class="descricao-classe">
-        O valor "baseline" coloca os itens de forma alinhada na linha base do container, independente do tamanho
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
-    
-    <div class="container3 display-flex align-items-baseline">
-        <div class="contidob1"></div>
-        <div class="contidob2"></div>
-        <div class="contidob3"></div>
-        <div class="contidob4"></div>
-        <div class="contidob5"></div>
-    </div>
-
-    <h3>
-        Flex-wrap
-    </h3>
-
-    <p class="descricao-propriedade">
-        O "flex-wrap" é uma propriedade que "embrulha" os itens dentro do container
-    </p>
-
-    <h4>
-        Nowrap
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "nowrap" não faz nada demais pois pede pra não "embrulhar"
-    </p>
-    
-    <p>
-        Exemplo:
-    </p>
-    
-    <div class="container4 display-flex flex-wrap-nowrap">
-        <div class="contido4">1</div>
-        <div class="contido4">2</div>
-        <div class="contido4">3</div>
-        <div class="contido4">4</div>
-        <div class="contido4">5</div>
-    </div>
-
-    <h4>
-        Wrap
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "wrap" embrulha os itens do container
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-
-    <div class="container4 display-flex flex-wrap">
-        <div class="contido-wrap">1</div>
-        <div class="contido-wrap">2</div>
-        <div class="contido-wrap">3</div>
-        <div class="contido-wrap">4</div>
-        <div class="contido-wrap">5</div>
-    </div>
-
-    <h4>
-        Wrap-reverse
-    </h4>
-
-    <p class="descricao-propriedade">
-        O valor "wrap-reverse" inverte a ordem de itens embrulhados dentro do container
-    </p>
-
-    <p>
-        Exemplo:
-    </p>
-
-    <div class="container4 display-flex flex-wrap-reverse">
-        <div class="contido-wrap">1</div>
-        <div class="contido-wrap">2</div>
-        <div class="contido-wrap">3</div>
-        <div class="contido-wrap">4</div>
-        <div class="contido-wrap">5</div>
-    </div>
-
-    <h3>
-        Flex-flow
-    </h3>
-
-    <p class="descricao-propriedade">
-        A propriedade "flexflow" é um shorthand (básicamente abreviação) para as propriedades flex-direction e flex-wrap. Só é necessário colocar o valor e vai funcionar como as duas propriedades
-    </p>
-
-    
-    <div class="container5 display-flex">
-        <div class="contido5">1</div>
-        <div class="contido5">2</div>
-        <div class="contido5">3</div>
-        <div class="contido5">4</div>
-        <div class="contido5">5</div>
-    </div>
-    
+            <li>
+                <a href="#align-content">align-content</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
