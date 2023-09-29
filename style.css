@@ -38,7 +38,6 @@ h4 {
     font-size: 18pt;
 }
 
-
 p, table{
     margin: 10px 0;
 }
@@ -215,8 +214,6 @@ tr:nth-child(odd) {
         margin: 5px
     } 
 
-
-
     .display-flex {
         display: flex;
     }
@@ -240,7 +237,6 @@ tr:nth-child(odd) {
         justify-content: space-around
     }
     
-
     .justify-content-space-evenly {
         justify-content: space-evenly;
     }
@@ -324,7 +320,6 @@ tr:nth-child(odd) {
         flex-wrap: nowrap;
     }
 
-
     .flex-wrap {
         flex-wrap: wrap;
     }
@@ -333,7 +328,6 @@ tr:nth-child(odd) {
         flex-wrap: wrap-reverse;
     }
     
-
     .contido-wrap {
         width: 300px;
         height: 75px;
